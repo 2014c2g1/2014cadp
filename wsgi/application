@@ -27,6 +27,7 @@ along with CMSimply. If not, see <http://www.gnu.org/licenses/>.
 #@+<<declarations>>
 #@+node:cmsxh.20131226100304.3662: ** <<declarations>> (application)
 import cherrypy
+import gear
 import re
 import os
 import math
@@ -2723,6 +2724,7 @@ class Download:
     #@-others
 #@-others
 root = CMSimply()
+root.gear = gear.Gear()
 root.download = Download()
 
 # setup static, images and downloads directories
